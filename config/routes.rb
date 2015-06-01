@@ -31,6 +31,8 @@ Logengine::Application.routes.draw do
   #     resource :seller
   #   end
 
+  resources :Logpage
+  resources :path_locations
   # Sample resource route with more complex sub-resources
   #   resources :products do
   #     resources :comments
