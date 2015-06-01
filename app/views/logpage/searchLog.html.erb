@@ -2,7 +2,7 @@
 	<h1>Log Engine</h1>
 
 	<%= form_for @log, url: :Logpage_index do |f| %>
-	Path: <%= f.text_field :path %>
+	Path: <%= f.text_field :path, :value => @path||nil %>
 		  <%= f.submit :ready %>
 	<% end %>
 	<br>

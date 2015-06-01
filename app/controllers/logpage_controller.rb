@@ -7,8 +7,8 @@ class LogpageController < ApplicationController
 
 	def create
 		@log = PathLocation.new
-		path = params[:path_location][:path]
-		@display = File.readlines(path).each{|line| line}
+		@path = params[:path_location][:path]
+		@display = File.readlines(@path).each{|line| line}
 		render template: "logpage/searchLog.html"
 	end
 end
